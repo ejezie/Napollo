@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    padding: 5%;
+    padding: 7%;
     .text__wrap {
       display: flex;
       flex-direction: column;
@@ -42,8 +42,9 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 5%;
+    justify-content: space-between;
+    width: 100%;
+    padding: 7%;
     .text__two__wrap {
       display: flex;
       align-items: flex-start;
@@ -64,6 +65,75 @@
       height: 30rem;
       width: 30rem;
       object-fit: contain;
+    }
+  }
+  #three {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 7%;
+    .three__blanket {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .three__wrap {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        .three__header {
+          font-size: 3.5rem;
+          color: rgb(255, 136, 0);
+        }
+        .play__wrap {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-around;
+          flex-direction: column;
+        }
+        .play__text {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 150%;
+          .view__all {
+            font-weight: 200;
+            font-size: 0.8rem;
+            cursor: pointer;
+          }
+          .view__title {
+            font-weight: 800;
+            cursor: pointer;
+          }
+        }
+        .play__comp__wrap {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          cursor: pointer;
+          margin-left: 25%;
+        }
+      }
+      .three__button {
+        padding: 5%;
+        background-color: rgb(255, 136, 0);
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+        margin-left: 55%;
+        .greater {
+          font-size: 2rem;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .playphone {
+      object-fit: contain;
+      width: 40rem;
+      height: 50rem;
     }
   }
 }

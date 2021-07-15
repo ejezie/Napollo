@@ -1,0 +1,39 @@
+.play {
+  width: 8rem;
+  font-size: 0.8rem;
+  margin-right: 20%;
+  padding: 5%;
+  .cover {
+    border-radius: 32px;
+    object-fit: contain;
+    height: 13rem;
+    width: 10rem;
+  }
+  .song__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .song {
+      color: rgb(184, 182, 182);
+    }
+    .love {
+      color: rgb(255, 136, 0);
+      font-size: 1.3rem;
+    }
+    .loved {
+      color: rgb(184, 182, 182);
+      font-size: 1.3rem;
+    }
+  }
+  .artiste__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .artiste {
+      color: rgb(255, 136, 0);
+    }
+    .likes {
+      color: rgb(184, 182, 182);
+    }
+  }
+}
