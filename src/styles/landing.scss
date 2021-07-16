@@ -241,10 +241,117 @@
     height: 100vh;
     width: 100%;
     .six__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
       .six__header {
         color: rgb(255, 136, 0);
+        font-size: 3.5rem;
       }
       .six__image__wrap {
+        //
+      }
+    }
+  }
+  #seven {
+    height: 100vh;
+    width: 100%;
+    .seven__header {
+      font-size: 3.5rem;
+      color: rgb(255, 136, 0);
+      text-align: center;
+    }
+    .card__wrap {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10%;
+    }
+  }
+  #eight {
+    height: 100vh;
+    width: 100%;
+    .eight__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .eight__image {
+        height: 80%;
+        width: 30%;
+      }
+      .eight__text {
+        width: 30%;
+        .eight__header {
+          font-size: 3.2rem;
+          color: rgb(255, 136, 0);
+        }
+        p {
+          font-weight: 200;
+        }
+      }
+
+      .eight__image__wrap {
+        img {
+          width: 9rem;
+          height: 8rem;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  #footer {
+    height: 50vh;
+    width: 100%;
+    .footer__wrap {
+      background-color: rgba(54, 51, 51, 0.8);
+      height: 50vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .left__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 35%;
+        img {
+          height: 5rem;
+          width: 5rem;
+        }
+        .copy__right {
+        }
+        .legal {
+          display: flex;
+          justify-content: space-between;
+          width: 10rem;
+        }
+      }
+      .footer__center {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 40%;
+      }
+      .footer__right {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 45%;
+        p {
+        }
+        .icons {
+          display: flex;
+          justify-content: space-between;
+          width: 50%;
+        }
+        .download__wrap {
+          img {
+            width: 4rem;
+            height: 4rem;
+            object-fit: contain;
+          }
+        }
       }
     }
   }

@@ -16,8 +16,13 @@ import playphone from "../images/playphone.png";
 import casset from "../images/casset.png";
 import planone from "../images/planone.png";
 import plantwo from "../images/plantwo.png";
+import cardpic from "../images/cardpic.png";
+import devices from "../images/devices.png";
+import appledown from "../images/appledown.png";
+import googledown from "../images/googledown.png";
 import Play from "../components/Play";
 import Expansion from "../components/Expansion";
+import Card from "../components/Card";
 
 function Landing() {
   return (
@@ -173,12 +178,113 @@ function Landing() {
           </div>
         </div>
       </section>
-      <section className="six">
+      {/*  */}
+      <section id="six">
         <div className="six__wrap">
           <h1 className="six__header">Choose Your Plan</h1>
           <div className="six__image__wrap">
             <img src={planone} alt="plan" className="planone" />
-            <img src={plantwo} alt="plan" className="plantwo"/>
+            <img src={plantwo} alt="plan" className="plantwo" />
+          </div>
+        </div>
+      </section>
+      {/*  */}
+      <section id="seven">
+        <h1 className="seven__header">Testimonials</h1>
+        <div className="card__wrap">
+          <Card
+            text="This is the best app i have come across, i was able to upscale my career in 10 weeeks"
+            image={cardpic}
+            genre="R&B/Soul"
+            name="French Banton"
+          />
+          <Card
+            text="Beign an artiste on Napollo has been a real game changer.
+            "
+            image={cardpic}
+            genre="Pop Artiste"
+            name="Hanna Gosley"
+          />
+          <Card
+            text="Napollo is such a great platform. I'm
+            getting exposure and opportunities that"
+            image={cardpic}
+            genre="Rapper"
+            name="Joy Banton"
+          />
+        </div>
+      </section>
+      {/*  */}
+      <section id="eight">
+        <div className="eight__wrap">
+          <img src={devices} alt="phones" className="eight__image" />
+          <div className="eight__text">
+            <h1 className="eight__header">
+              Download our iOS and Android apps <span>for Free</span>
+            </h1>
+            <p>
+              Downloaded over 10 million times in less than six months, our
+              cross-platform app allows you to listen to, discover, favorite,
+              and share music on the go.
+            </p>
+            <div className="eight__image__wrap">
+              <img src={appledown} alt="apple store" />
+              <img src={googledown} alt="google store" />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*  */}
+      <section id="footer">
+        <div className="footer__wrap">
+          <div className="left__footer">
+            <img src={logonapollo} alt="logo" />
+            <p className="copy__right">
+              <i class="far fa-copyright"></i> 2021 Napollo
+            </p>
+            <div className="legal">
+              <p>legal</p>
+              <p>privacy</p>
+              <p>cokies</p>
+            </div>
+          </div>
+          <div className="footer__center">
+            <p>Napollo</p>
+            <p>Artist Membership </p>
+            <p>Listener </p>
+            <p>Listener</p>
+            <p>About</p>
+            <p>Overview</p>
+            <p>Overview</p>
+            <p>Terms of Service</p>
+            <p>Sign Up</p>
+            <p>Pricing</p>
+            <p>Pricing</p>
+            <p>Privacy Policy</p>
+            <p>Forgot Password</p>
+            <p>Opportunies</p>
+            <p>Suggested Playlist</p>
+            <p>Copyright policy </p>
+            <p>Contact</p>
+            <p>Shows</p>
+            <p>Discover</p>
+            <p>Cookies</p>
+            <p>Help </p>
+            <p>Reviews</p>
+            <p>Trademark</p>
+          </div>
+          <div className="footer__right">
+            <p>Follow us</p>
+            <div className="icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-instagram-square"></i>
+            </div>
+            <p>Download App</p>
+            <div className="download__wrap">
+              <img src={appledown} alt="store" />
+              <img src={googledown} alt="store" />
+            </div>
           </div>
         </div>
       </section>
