@@ -13,6 +13,9 @@ import xplaythree from "../images/xplaythree.PNG";
 import xplayfour from "../images/xplayfour.png";
 import phoneexp from "../images/phoneexp.png";
 import playphone from "../images/playphone.png";
+import casset from "../images/casset.png";
+import planone from "../images/planone.png";
+import plantwo from "../images/plantwo.png";
 import Play from "../components/Play";
 import Expansion from "../components/Expansion";
 
@@ -117,7 +120,67 @@ function Landing() {
       </section>
       {/*  */}
       <section id="four">
-          <Expansion num="01" pic={xplayone} name="ColdPlay"/>
+        <img src={phoneexp} alt="smart phone" className="phoneexp" />
+        <div className="four__wrap">
+          <h1 className="expansion__header">Expansion Page</h1>
+          <p className="expansion__text">
+            Discover artistes all around the world by their location via the
+            expansion page. Also, get to know the top artistes in any location
+            on the globe.
+          </p>
+          <div className="expansion_play__wrap">
+            <Expansion
+              num="01"
+              pic={xplayone}
+              name="ColdPlay"
+              songt="Lights Out"
+            />
+            <Expansion num="02" pic={xplaytwo} name="Green Tuska" />
+            <Expansion num="03" pic={xplaythree} name="Bruno Mars" />
+            <Expansion num="04" pic={xplayfour} name="Cardi" />
+          </div>
+        </div>
+      </section>
+      {/*  */}
+      <section id="five">
+        <div className="five__wrap">
+          <div className="five__background">
+            <img src={casset} alt="" className="five__image" />
+            <div className="five__text__wrap">
+              <h1 className="five__header">
+                Listen and enjoy all trending music
+              </h1>
+              <div className="five__list">
+                <div className="list__wrap">
+                  <div className="dot"></div>
+                  What's hot
+                </div>
+                <div className="list__wrap">
+                  <div className="dot"></div>
+                  By genre
+                </div>
+                <div className="list__wrap">
+                  <div className="dot"></div>
+                  By location
+                </div>
+                <div className="list__wrap">
+                  <div className="dot"></div>
+                  Lots more...
+                </div>
+              </div>
+              <button className="five__button">Start listening</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="six">
+        <div className="six__wrap">
+          <h1 className="six__header">Choose Your Plan</h1>
+          <div className="six__image__wrap">
+            <img src={planone} alt="plan" className="planone" />
+            <img src={plantwo} alt="plan" className="plantwo"/>
+          </div>
+        </div>
       </section>
     </div>
   );

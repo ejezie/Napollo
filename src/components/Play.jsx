@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Play({ image, song, artiste, likes }) {
   const ask = song === "Hate Me";
-  const [loved, setLoved] = useState(ask ? true : false);
+  const [loved] = useState(ask ? true : false);
   return (
     <div className="play">
       <img src={image} alt="cover" className="cover" />
