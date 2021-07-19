@@ -248,18 +248,28 @@
       flex-direction: column;
       .six__header {
         color: rgb(255, 136, 0);
-        font-size: 3.5rem;
+        font-size: 3.1rem;
       }
       .six__image__wrap {
-        //
+        .planone {
+          height: 30rem;
+          width: 15rem;
+          object-fit: contain;
+        }
+        .plantwo {
+          height: 30rem;
+          width: 15rem;
+          object-fit: contain;
+        }
       }
     }
   }
   #seven {
     height: 100vh;
     width: 100%;
+    padding: 1.5%;
     .seven__header {
-      font-size: 3.5rem;
+      font-size: 3rem;
       color: rgb(255, 136, 0);
       text-align: center;
     }
@@ -283,7 +293,7 @@
       .eight__text {
         width: 30%;
         .eight__header {
-          font-size: 3.2rem;
+          font-size: 2.5rem;
           color: rgb(255, 136, 0);
         }
         p {
@@ -303,6 +313,7 @@
   #footer {
     height: 50vh;
     width: 100%;
+    font-size: 0.7rem;
     .footer__wrap {
       background-color: rgba(54, 51, 51, 0.8);
       height: 50vh;
@@ -315,7 +326,7 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        height: 35%;
+        height: 50%;
         img {
           height: 5rem;
           width: 5rem;
@@ -332,13 +343,14 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         width: 40%;
+        height: 70%;
       }
       .footer__right {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: space-between;
-        height: 45%;
+        height: 55%;
         p {
         }
         .icons {
