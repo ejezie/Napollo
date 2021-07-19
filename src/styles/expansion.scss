@@ -9,18 +9,18 @@
     width: 60%;
     .num__expansion {
       font-weight: 800;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
     .pic__expansion {
-      border-radius: 10px;
+      border-radius: 6px;
       object-fit: contain;
       margin-left: -30%;
-      height: 5.4rem;
-      width: 5.4rem;
+      height: 4rem;
+      width: 4rem;
       cursor: pointer;
     }
     .name__expansion__wrap {
-      font-size: 1rem;
+      font-size: 0.8rem;
       width: 150%;
       .name__expansion {
       }
@@ -31,13 +31,13 @@
   }
   .love__expansion {
     color: rgb(184, 182, 182);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-left: 20%;
     cursor: pointer;
   }
   .love__expansions {
     color: rgb(255, 136, 0);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-left: 20%;
     cursor: pointer;
   }
